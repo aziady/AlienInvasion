@@ -4,6 +4,8 @@ class GameStats:
 
     def __init__(self, ai_settings):
         """ Initialize statistics. """
+        self.score = None
+        self.ships_left = None
         self.ai_settings = ai_settings
         self.reset_stats()
         # Start Alien Invasion in an active state.
