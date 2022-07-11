@@ -45,7 +45,7 @@ def run_game():
         # Redraw the screen during each pass through the loop
         screen.fill(ai_settings.bg_color)
 
-        gf.check_events(ai_settings, screen, stats, play_button, ship, aliens, bullets)
+        gf.check_events(ai_settings, screen, stats, sb, play_button, ship, aliens, bullets)
         if stats.game_active:
             ship.update()
             gf.update_bullets(ai_settings, screen, stats, sb, ship, aliens, bullets)
